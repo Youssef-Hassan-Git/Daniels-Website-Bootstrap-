@@ -1,0 +1,726 @@
+:root{
+    --color-primary: black;
+    --color-secondary:white;
+    --bg-gray: #F7F7F7;
+}
+
+/* fonts */
+
+@font-face {
+    font-family: "montserrat extrabold";
+    src: url(../fonts/Montserrat/Montserrat-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "montserrat bold";
+    src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "montserrat semibold";
+    src: url(../fonts/Montserrat/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "montserrat medium";
+    src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: "montserrat light";
+    src: url(../fonts/Montserrat/Montserrat-Light.ttf);
+}
+@font-face {
+    font-family: "Poppins light";
+    src: url(../fonts/Poppins/Poppins-Light.ttf);
+}
+@font-face {
+    font-family: "Poppins bold";
+    src: url(../fonts/Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: "Poppins regular";
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Poppins semibold";
+    src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+
+/* animation */
+header .headline span::after{
+    content: "";
+    -webkit-animation: typing 10s linear infinite;
+}
+
+@keyframes typing {
+    /* Larry Daniels (13 letters) */
+    0% { content: "|"; }
+    5% { content: "L|"; }
+    6% { content: "La|"; }
+    7% { content: "Lar|"; }
+    8% { content: "Larr|"; }
+    9% { content: "Larry|"; }
+    10% { content: "Larry |"; }
+    11% { content: "Larry D|"; }
+    12% { content: "Larry Da|"; }
+    13% { content: "Larry Dan|"; }
+    14% { content: "Larry Dani|"; }
+    15% { content: "Larry Danie|"; }
+    16% { content: "Larry Daniel|"; }
+    17% { content: "Larry Daniels|"; }
+    20% { content: "Larry Daniels|"; } /* Hold */
+
+    /* Erasing Larry Daniels */
+    22% { content: "Larry Daniel|"; }
+    23% { content: "Larry Danie|"; }
+    24% { content: "Larry Dani|"; }
+    25% { content: "Larry Dan|"; }
+    26% { content: "Larry Da|"; }
+    27% { content: "Larry D|"; }
+    28% { content: "Larry |"; }
+    29% { content: "Larry|"; }
+    30% { content: "Larr|"; }
+    31% { content: "Lar|"; }
+    32% { content: "La|"; }
+    33% { content: "L|"; }
+    34% { content: "|"; }
+
+    /* Developer (9 letters) */
+    35% { content: "D|"; }
+    36% { content: "De|"; }
+    37% { content: "Dev|"; }
+    38% { content: "Deve|"; }
+    39% { content: "Devel|"; }
+    40% { content: "Develo|"; }
+    41% { content: "Develop|"; }
+    42% { content: "Develope|"; }
+    43% { content: "Developer|"; }
+    50% { content: "Developer|"; } /* Hold */
+
+    /* Erasing Developer */
+    52% { content: "Develope|"; }
+    53% { content: "Develop|"; }
+    54% { content: "Develo|"; }
+    55% { content: "Devel|"; }
+    56% { content: "Deve|"; }
+    57% { content: "Dev|"; }
+    58% { content: "De|"; }
+    59% { content: "D|"; }
+    60% { content: "|"; }
+
+    /* Designer (8 letters) */
+    61% { content: "D|"; }
+    62% { content: "De|"; }
+    63% { content: "Des|"; }
+    64% { content: "Desi|"; }
+    65% { content: "Desig|"; }
+    66% { content: "Design|"; }
+    67% { content: "Designe|"; }
+    68% { content: "Designer|"; }
+    75% { content: "Designer|"; } /* Hold */
+
+    /* Erasing Designer */
+    77% { content: "Designe|"; }
+    78% { content: "Design|"; }
+    79% { content: "Desig|"; }
+    80% { content: "Desi|"; }
+    81% { content: "Des|"; }
+    82% { content: "De|"; }
+    83% { content: "D|"; }
+    84% { content: "|"; }
+    100% { content: "|"; } /* End of cycle */
+}
+
+
+header .headline-icons{
+    width: 200px;
+    height: 50px;
+
+}
+
+header .headline-icons i{
+    color: white;
+    width: 25px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+
+/* caption heading Hello*/
+header .caption h5{
+    font-family: "montserrat bold";
+    font-size: 50px;
+
+}
+h1, h2, h3, h4, h5, h6{
+ font-family: "montserrat bold";
+}
+
+header .headline span{
+    font-family: "montserrat medium";
+    font-size: 60px;
+}
+
+header .headline {
+    font-family: "montserrat light";
+    font-size: 60px;
+}
+
+
+/* nav anchors */
+nav .nav-anchors{
+    font-family: "Poppins regular";
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* logo nav */
+nav .logo{
+    text-transform: uppercase;
+    font-family: "Poppins bold";
+}
+
+/* bg image */
+header.vh-100{
+    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom bottom;
+}
+
+.contact-anchor,
+.team-anchor,
+.clients-anchor,
+.works-anchor,
+.services-anchor,
+.about-anchor,
+.home-anchor{
+    position: relative;
+}
+
+
+body:has(#contact-section:target) .contact-anchor::after,
+body:has(#team-section:target) .team-anchor::after,
+body:has(#clients-section:target) .clients-anchor::after,
+body:has(#works-section:target) .works-anchor::after,
+body:has(#services-section:target) .services-anchor::after,
+body:has(#about-section:target) .about-anchor::after,
+body:has(#home-section:target) .home-anchor::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 42px;
+    top: 85%;
+    left: 7px;
+    background-color: black;
+}
+
+
+/* about section */
+
+#about-section .font-progress{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    font-family: "montserrat medium";
+    justify-content: space-between;
+    
+}
+
+/* buttons */
+
+
+
+#about-section .btn-about{
+    font-size: 13px;
+    padding: 10px 30px;
+    font-family: "Poppins light";
+    border: 1px solid black;
+
+    margin-top: 30px;
+}
+
+#about-section .btn-black{
+
+    background-color: var(--color-primary);
+    transition: 0.5s all;
+}
+
+#about-section .btn-black:hover{
+    background-color: white;
+    color: black !important;
+}
+
+
+#about-section .btn-white{
+    background-color: white;
+    color: black ;
+
+    transition: 0.5s all;
+
+}
+
+
+#about-section .btn-white:hover{
+    background-color: black ;
+    color: white ;
+}
+
+
+#about-section .about-paragraph .customized-design{
+
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Poppins regular";
+
+    color: #999;
+}
+
+#about-section .about-paragraph .about-color{
+    color: #748182;
+    font-size: 15px;
+}
+
+#about-section .about-paragraph .about-daniel{
+    font-family: "Poppins bold";
+    font-size: 15px;
+}
+
+
+#about-section .box-shadow{
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+    background: #f7f7f7;
+}
+
+
+#about-section .about-img{
+    position: relative;
+}
+
+
+#about-section .about-img::after{
+    content: "";
+    position: absolute;
+
+    top: 101%;
+    left: -7%;
+    /* background-color: gray; */
+    height: 5%;
+    width: 90%;
+    background-image: url(../images/dots.png);
+
+}
+
+
+#about-section .about-img::before{
+    content: "";
+    position: absolute;
+
+    top: 20%;
+    right: 101%;
+    /* background-color: gray; */
+    height: 80%;
+    width: 6%;
+    background-image: url(../images/dots.png);
+
+}
+
+
+/* Services Section */
+
+#services-section{
+    background-color: var(--bg-gray);
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.heading h6{
+    font-family: "montserrat extrabold";
+    font-size: 40px;
+    text-align: center;
+    position: absolute;
+
+}
+
+.heading .dots{
+    background-image: url("../images/dots.png");
+    width: 13%;
+    height: 30px;
+    margin-top: 20px;
+}
+
+
+/* each service heading */
+#services-section .font-size{
+    font-family: "montserrat bold";
+    font-size: 18px;
+}
+
+/* each service paragraph */
+#services-section .paragraph-font{
+    color: #748182;
+    font-family: "Poppins light";
+
+}
+/* each service icon */
+#services-section .icons{
+    
+    height: 60px;
+    width: 60px;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    margin-bottom: 15px;
+
+    transition: 0.5s all;
+}
+
+#services-section .icons i{
+    font-size: 25px;
+    
+}
+
+/* hover */
+#services-section .icon-hover:hover .icons{
+    background-color: black;
+    color: white;
+}
+
+
+
+/* Portfolio section */
+
+#portfolio-section .img{
+    position: relative;
+    overflow: hidden;
+}
+
+#portfolio-section .layer{
+    background-color: #F7F7F7;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    transform: translateY(110%);
+    transition: 0.3s all ;
+}
+
+#portfolio-section .layer i{
+    height: 40px;
+    width: 40px;
+
+    background-color: black;
+    border-radius: 50%;
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
+#portfolio-section .img:hover .layer{
+    transform: translateY(0);
+}
+
+
+/* nav tabs */
+#portfolio-section .nav-link{
+    color: black;
+    font-family: "Poppins bold";
+
+}
+
+#portfolio-section .nav-link.active{
+    position: relative;
+}
+/* active tab underline */
+#portfolio-section .nav-link.active::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 50px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    top: 100%;
+    background-color: black;
+}
+
+
+#testimonial-section {
+    background-color: var(--bg-gray);
+}
+
+
+#testimonial-section .carousel-indicators [data-bs-target] {
+
+    height: 10px;
+    width: 10px;
+    background-color: #999;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+
+#testimonial-section h6{
+    font-family: "montserrat semibold";
+    margin-top: 32px;
+    margin-bottom: 2px;
+}
+
+#testimonial-section .envanto{
+    font-family: "Poppins bold";
+    font-size: 12px;
+    color: #999;
+}
+
+
+#testimonial-section  p{
+    font-family: "Poppins regular";
+    font-size: 15px;
+    color: gray;
+
+    margin-top: 20px;
+}
+
+
+/* achievements section */
+#acheivements{
+    padding: 80px 0px;
+}
+
+#acheivements .icons i{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+
+#acheivements .icons h3{
+    font-family: "montserrat extrabold";
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+#acheivements .icons p{
+    font-family: "Poppins bold";
+    font-size: 15px;
+    color: #748182;
+}
+
+/* team section */
+
+#team-section{
+    background-color: var(--bg-gray);
+}
+
+
+#team-section .img{
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* img layer */
+#team-section .layer{
+    position: absolute;
+    --max-width: 5px;
+    top: var(--max-width);
+    bottom: var(--max-width);
+    left: var(--max-width);
+    right: var(--max-width);
+    background-color: rgba(255, 255, 255, 0.95);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; 
+    opacity: 0; 
+    transition: 0.5s all ease;
+}
+
+
+#team-section .layer i{
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 10px;
+
+    transition: 0.4s all;
+ 
+}
+
+
+#team-section .layer  a {
+    text-decoration: none;
+    pointer-events: auto; 
+
+}
+
+
+#team-section .img:hover .layer{
+    transform: rotateY(360deg);
+    opacity: 1;
+
+
+}
+
+#team-section .img img:hover{
+    transform: scale(1.3);
+}
+
+#team-section .img img{
+    transition: 0.5s all ease;
+
+}
+
+#team-section .text{
+    background-color: #5B5B5B;
+
+}
+
+
+#team-section .text h4{
+    font-family: "montserrat medium";
+}
+
+#team-section .text h5{
+    text-transform: uppercase;
+    font-family: "montserrat bold";
+
+}
+
+/* icon hover */
+#team-section .layer i:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+
+/* contacts section */
+
+
+#contacts-section .paragraph-icon{
+    color: #748182;
+    font-family: 15px;
+    line-height: 1.6;
+}
+
+
+#contacts-section h6{
+    font-family: "montserrat bold";
+    margin-bottom: 10px;
+}
+
+
+
+#contacts-section .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 10px;
+
+
+}
+
+
+#contacts-section .icon i{
+    height: 65px;
+    width: 65px;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+
+    transition: 0.4s all;
+}
+
+
+
+#contacts-section .contact-details:hover .icon i{
+    background-color: black;
+    color: white;
+}
+
+
+/* button */
+
+#contacts-section .btn-black{
+    background-color: black;
+    color: white;
+    padding: 10px 40px;
+    font-family: "Poppins light";
+    font-size: 13px;
+    transition: 0.5s all;
+}
+
+
+#contacts-section .btn-black:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+
+#contacts-section .bg-input{
+    background-color: #F4F4F4;
+    border-color: #f4f4f4;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #1C1C1C;
+    
+}
+
+
+footer p{
+    font-family: "Poppins light";
+
+    color: #748182;
+    font-size: 13px;
+}

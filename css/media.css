@@ -1,0 +1,33 @@
+@media screen and (max-width: 768px) {    
+
+    /* TITLE */
+    header .headline span,    
+    header .headline {
+        font-size: 30px;
+    }
+
+
+    #contacts-section .container {
+        width: 950px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    #contacts-section .container {
+        width: 1170px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #contacts-section .container {
+        width: 970px;
+    }
+}
+@media screen and (min-width: 768px) {
+    #contacts-section .container {
+        width: 950px;
+    }
+}
