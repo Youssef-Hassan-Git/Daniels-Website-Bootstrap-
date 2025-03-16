@@ -199,8 +199,8 @@ header.vh-100{
 
 .contact-anchor,
 .team-anchor,
-.clients-anchor,
-.works-anchor,
+.testimonial-anchor,
+.portfolio-anchor,
 .services-anchor,
 .about-anchor,
 .home-anchor{
@@ -210,8 +210,8 @@ header.vh-100{
 
 body:has(#contact-section:target) .contact-anchor::after,
 body:has(#team-section:target) .team-anchor::after,
-body:has(#clients-section:target) .clients-anchor::after,
-body:has(#works-section:target) .works-anchor::after,
+body:has(#clients-section:target) .testimonial-anchor::after,
+body:has(#works-section:target) .portfolio-anchor::after,
 body:has(#services-section:target) .services-anchor::after,
 body:has(#about-section:target) .about-anchor::after,
 body:has(#home-section:target) .home-anchor::after{
@@ -723,4 +723,8 @@ footer p{
 
     color: #748182;
     font-size: 13px;
+}
+
+.navbar-nav .nav-link.active{
+    color: rgba(0, 0, 0, 0.3);
 }
