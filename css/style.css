@@ -224,6 +224,10 @@ body:has(#home-section:target) .home-anchor::after{
     background-color: black;
 }
 
+.navbar{
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 150px 0px;
+}
+
 
 /* about section */
 
